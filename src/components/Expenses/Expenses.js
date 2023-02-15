@@ -10,8 +10,8 @@ function Expenses(props) {
   const filterChangeHandler = (selectedYear) => {
     setFilter(selectedYear);
   };
-  const filteredExpenses=props.items.filter(expense=>{
-    return expense.data.getFullYear().toString()===filter;
+  const filteredExpenses=props.expenses.filter(expense=>{
+    return expense.date.getFullYear().toString()===filter;
   })
   return (
     <Card className="expenses">
