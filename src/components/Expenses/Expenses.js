@@ -1,6 +1,8 @@
-import ExpenseItem from "./ExpenseItem";
+
 import ExpenseFilter from "./ExpenseFilter";
+import expenseList from "./expenseslist";
 import { useState } from "react";
+import "./expenseslist.css"
 
 import "./Expenses.css";
 import App from "../../App";
@@ -20,19 +22,15 @@ function Expenses(props) {
         onFilterChange={filterChangeHandler}
       ></ExpenseFilter>
 
-{filteredExpenses.length ===0 ? (<p>No Expenses found</p>) : (
-      filteredExpenses.map((expense) => (
-        <ExpenseItem
-        key={expense.id}
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
-        ></ExpenseItem>
-      )))
-      }
+
       
+   
+    <expenseList expenses={filteredExpenses}></expenseList>
+
     </Card>
   );
+
+  
 }
 export default Expenses;
 
