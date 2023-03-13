@@ -12,7 +12,7 @@ An application to track your bucks!!
 
 ## Acknowledgements
 
- - [ReactJS](https://reactjs.org/)
+ - [ReactJS](https://reactjs.org/) 
  - [NodeJS](https://nodejs.org/en/docs/)
  
 
